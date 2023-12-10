@@ -14,14 +14,7 @@ const sendEmail = async (subject, message, send_to, send_from, reply_to) => {
       rejectUnauthorized: false,
     },
   });
-  // const transporter = nodeMailer.createTransport({
-  //   host: "sandbox.smtp.mailtrap.io",
-  //   port: 2525,
-  //   auth: {
-  //     user: "024745d605a0f9",
-  //     pass: "dfc48cd06810ba",
-  //   },
-  // });
+
   const options = {
     from: send_from,
     to: send_to,
